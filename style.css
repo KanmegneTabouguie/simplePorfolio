@@ -1,0 +1,265 @@
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background: #caebf2;
+}
+
+h1,h2,h3,h4 {
+    font-family:'Roboto Mono'  monospace;
+}
+
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 5px 10px 5px 10px;
+}
+
+.container>div{
+    margin: 20px auto;
+
+}
+
+.intro{
+    text-align: center;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.i-am{
+    
+    text-align: center;
+}
+
+.i-like{
+  
+    text-align: center;
+}
+.about-list{
+    text-align: center;
+    list-style: none;
+}
+
+@media (max-width: 400px){
+    .about-grid{
+        grid-template-columns: 100%;
+        }
+    
+}
+
+.project-heading{
+    text-align: center;
+}
+.project-grid{
+display: grid;
+grid-template-columns: 50% 50%;
+}
+.project-image-wrapper{
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+
+@media (max-width: 600px){
+    .project-grid{
+        grid-template-columns: 100%;
+        }
+    
+}
+
+.links-contact{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+}
+
+.first-section{
+    display: grid;
+    grid-template-columns: 65% 35% ;
+    text-align: center;
+}
+
+
+
+.secimage{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    padding: auto;
+    
+}
+
+
+@media (max-width: 600px){
+    .first-section{
+        grid-template-columns: 100%;
+        }
+    
+}
+
+
+.links{
+    justify-content: center;
+
+}
+
+.links-liste{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    .links-contact{
+        grid-template-columns: 100%;
+        }
+    
+}
+
+.profile-picture{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover{
+    box-shadow: 0 8px 16px 0 rgb(34, 60, 80, 0.16);
+}
+
+.project-image{
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.project-image:hover{
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
+}
+
+.project-image-wrapper:hover> h4 {
+visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: wheat;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+
+}
+
+
+
+
+hr{
+    border: 0;
+    height: 1px ;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0 ,0 ,0 ,0));
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    text-align: center;
+    
+}
+
+.work-experience{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    text-align: center;
+}
+
+.work-section{
+   
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+@media (max-width: 600px){
+    .work-section{
+        grid-template-columns: 100%;
+        }
+    
+}
+
+.snd-experience{
+    
+    margin-top: 17%;
+}
+
+.skill-section{
+    margin-top: 17%;
+    border-left: black;
+    border-left-style: solid;
+    border-width: 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+.subclass-work{
+    display: flex;
+    grid-template-columns: 50%;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+ /* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  } 
+
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+
+  /* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+
+  /* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
